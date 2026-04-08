@@ -541,7 +541,7 @@ Sts* parseSts( int argc, const char *stsFileName )
 
 }
 
-Formula* parseFormula( int argc, const char *argv )
+Formula* parseFormula(int argc, const char *argv )
 {
 	Formula *fP;
 	const char *formula = argv;

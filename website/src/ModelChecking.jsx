@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useLayoutEffect } from 'react'
 
 export default function ModelChecking() {
   const [formula, setFormula] = useState('')
@@ -7,7 +7,7 @@ export default function ModelChecking() {
   const [loading, setLoading] = useState(false)
   const outputRef = useRef(null)
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (outputRef.current) {
       outputRef.current.scrollTop = 0
     }
