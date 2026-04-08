@@ -520,15 +520,16 @@ Sts* parseSts( int argc, const char *stsFileName )
 {
 	Sts *stsP;
 	if ( (argc < 3) ) {
-		cout << "No STS filename specified!" << endl;
-		cout << "Using file: './data/STS.txt'" << endl;
-		stsFileName = "./data/STS.txt";
+		cout << "No STS filename specified!\n" << endl;
+		cout << "Found STS in file: './model_check/data/STS.txt' for demonstration purpose.\n" << endl;
+		cout << "Using file: './model_check/data/STS.txt'\n" << endl;
+		stsFileName = "./model_check/data/STS.txt";
 	}
 
-	cout << "Constructing STS...." << endl;
+	cout << "Constructing STS....\n" << endl;
 #if 1
 	stsP = constructSts( stsFileName );
-	cout << "Construction of STS from file '" << stsFileName << "' is complete!" << endl;
+	cout << "Construction of STS from file '" << stsFileName << "' is complete!\n" << endl;
 	return ( stsP );
 
 #else
@@ -543,15 +544,16 @@ Formula* parseFormula( int argc, const char *argv )
 	if ( (argc < 2) || !argv ) {
 		cout << "No Formula to parse!" << endl;
 		argv = "!EU!c2Uc0.c1";
+		cout << "Using formula: '" << argv << "' for demonstration purpose.\n" << endl;
 #if 0
 		argv = "AF!c0.AFc1";
 #endif
-		cout << "Using formula: '" << argv << "' for demonstration purpose." << endl;
+		cout << "Using formula: '" << argv << "' for demonstration purpose.\n" << endl;
 	}
 
-	cout << "Constructing the formula...." << endl;
+	cout << "Constructing the formula....\n" << endl;
 	fP = constructFormula( mystrdup(argv) );
-	cout << "Construction of formula for '" << argv << "' is complete!" << endl;
+	cout << "Construction of formula for '" << argv << "' is complete!\n" << endl;
 	return( fP ); 
 }
 
@@ -564,9 +566,9 @@ int main( int argc, char **argv )
 	set<State*> *setOfStatesP = modelCheck( formulaP, stsP );
 
 	if ( setOfStatesP->empty() ) {
-		cout << "Formula is not valid in any state!" << endl;
+		cout << "Formula is not valid in any state!\n" << endl;
 	} else {
-		cout << "Formula is valid in following states: " << endl;
+		cout << "Formula is valid in following states: \n" << endl;
 		set<State*>::iterator iter;
 		for ( iter = setOfStatesP->begin(); iter != setOfStatesP->end(); iter++ ) {
 			cout << (*iter)->name << ", " << endl;

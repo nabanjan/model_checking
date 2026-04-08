@@ -4,6 +4,7 @@
 #include <vector>
 #include <string>
 #include <iostream>
+#include <assert.h>
 
 using namespace std;
 
@@ -304,9 +305,9 @@ Sts* simpleSts()
 
 Sts* parseSts( char *stsFileName )
 {
-	assert( argv );
+	assert( stsFileName );
 
-	cout << "Constructing STS...." << endl;
+	cout << "Constructing STS....\n" << endl;
 #if 0
 	return ( contructSts( stsFileName ) );
 #else
