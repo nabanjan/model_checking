@@ -18,7 +18,7 @@ app.post('/api/run-model-check', (req, res) => {
   
   const cmd = `${exePath} "${formula || ''}" "${path.join(cwd, 'STS.txt')}" 2>&1`
   
-  exec(cmd, { cwd }, (error, stdout, stderr) => {
+  exec(cmd, { cwd, maxBuffer: 10 * 1024 * 1024 }, (error, stdout, stderr) => {
     if (error) {
       res.json({ success: false, output: stdout + stderr || error.message })
       return
