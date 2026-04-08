@@ -471,7 +471,7 @@ Sts* constructSts( const char *stsFileName )
 
 	FILE *pFile = fopen( stsFileName, "r" );
 
-	if (pFile==NULL) {fputs ("File error",stderr); exit (1);}
+	if (pFile==NULL) {fputs ("File error\n",stderr); exit (1);}
 
 	// obtain file size:
 	fseek( pFile , 0 , SEEK_END );
@@ -521,8 +521,8 @@ Sts* parseSts( int argc, const char *stsFileName )
 	Sts *stsP;
 	if ( (argc < 3) ) {
 		cout << "No STS filename specified!" << endl;
-		cout << "Using file: 'D:\\STS.txt'" << endl;
-		stsFileName = "D:\\STS.txt";
+		cout << "Using file: './data/STS.txt'" << endl;
+		stsFileName = "./data/STS.txt";
 	}
 
 	cout << "Constructing STS...." << endl;
