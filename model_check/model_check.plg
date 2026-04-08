@@ -1,0 +1,52 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: model_check - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ndas\AppData\Local\Temp\RSP140F.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/model_check.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\ndas\Desktop\model_check\model_check.cpp"
+]
+Creating command line "cl.exe @C:\Users\ndas\AppData\Local\Temp\RSP140F.tmp" 
+Creating temporary file "C:\Users\ndas\AppData\Local\Temp\RSP1410.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/model_check.pdb" /debug /machine:I386 /out:"Debug/model_check.exe" /pdbtype:sept 
+.\Debug\model_check.obj
+.\Debug\StdAfx.obj
+]
+Creating command line "link.exe @C:\Users\ndas\AppData\Local\Temp\RSP1410.tmp"
+<h3>Output Window</h3>
+Compiling...
+model_check.cpp
+C:\Users\ndas\Desktop\model_check\model_check.cpp(68) : warning C4786: 'std::pair<std::_Tree<State *,State *,std::set<State *,std::less<State *>,std::allocator<State *> >::_Kfn,std::less<State *>,std::allocator<State *> >::iterator,std::_Tree<State *,State *,std::set<State *,std::less<State *>,std::allocator<State *> >::_Kfn,std::less<State *>,std::allocator<State *> >::iterator>' : identifier was truncated to '255' characters in the debug information
+C:\Users\ndas\Desktop\model_check\model_check.cpp(68) : warning C4786: 'std::pair<std::_Tree<State *,State *,std::set<State *,std::less<State *>,std::allocator<State *> >::_Kfn,std::less<State *>,std::allocator<State *> >::const_iterator,std::_Tree<State *,State *,std::set<State *,std::less<State *>,std::allocator<State *> >::_Kfn,std::less<State *>,std::allocator<State *> >::const_iterator>' : identifier was truncated to '255' characters in the debug information
+C:\Users\ndas\Desktop\model_check\model_check.cpp(68) : warning C4786: 'std::pair<std::_Tree<Formula *,Formula *,std::set<Formula *,CmpFormulas,std::allocator<Formula *> >::_Kfn,CmpFormulas,std::allocator<Formula *> >::iterator,std::_Tree<Formula *,Formula *,std::set<Formula *,CmpFormulas,std::allocator<Formula *> >::_Kfn,CmpFormulas,std::allocator<Formula *> >::iterator>' : identifier was truncated to '255' characters in the debug information
+C:\Users\ndas\Desktop\model_check\model_check.cpp(68) : warning C4786: 'std::pair<std::_Tree<Formula *,Formula *,std::set<Formula *,CmpFormulas,std::allocator<Formula *> >::_Kfn,CmpFormulas,std::allocator<Formula *> >::const_iterator,std::_Tree<Formula *,Formula *,std::set<Formula *,CmpFormulas,std::allocator<Formula *> >::_Kfn,CmpFormulas,std::allocator<Formula *> >::const_iterator>' : identifier was truncated to '255' characters in the debug information
+C:\Users\ndas\Desktop\model_check\model_check.cpp(391) : warning C4786: 'std::pair<std::_Tree<State *,State *,std::set<State *,CmpName,std::allocator<State *> >::_Kfn,CmpName,std::allocator<State *> >::iterator,std::_Tree<State *,State *,std::set<State *,CmpName,std::allocator<State *> >::_Kfn,CmpName,std::allocator<State *> >::iterator>' : identifier was truncated to '255' characters in the debug information
+C:\Users\ndas\Desktop\model_check\model_check.cpp(391) : warning C4786: 'std::pair<std::_Tree<State *,State *,std::set<State *,CmpName,std::allocator<State *> >::_Kfn,CmpName,std::allocator<State *> >::const_iterator,std::_Tree<State *,State *,std::set<State *,CmpName,std::allocator<State *> >::_Kfn,CmpName,std::allocator<State *> >::const_iterator>' : identifier was truncated to '255' characters in the debug information
+c:\program files\microsoft visual studio\vc98\include\xtree(182) : warning C4786: 'std::_Tree<State *,State *,std::set<State *,std::less<State *>,std::allocator<State *> >::_Kfn,std::less<State *>,std::allocator<State *> >::~_Tree<State *,State *,std::set<State *,std::less<State *>,std::allocator<State *> >::_Kfn,std::less<State *>,std::allocator<State *> >' : identifier was truncated to '255' characters in the debug information
+c:\program files\microsoft visual studio\vc98\include\xtree(182) : warning C4786: 'std::_Tree<Formula *,Formula *,std::set<Formula *,CmpFormulas,std::allocator<Formula *> >::_Kfn,CmpFormulas,std::allocator<Formula *> >::~_Tree<Formula *,Formula *,std::set<Formula *,CmpFormulas,std::allocator<Formula *> >::_Kfn,CmpFormulas,std::allocator<Formula *> >' : identifier was truncated to '255' characters in the debug information
+c:\program files\microsoft visual studio\vc98\include\xtree(162) : warning C4786: 'std::_Tree<State *,State *,std::set<State *,std::less<State *>,std::allocator<State *> >::_Kfn,std::less<State *>,std::allocator<State *> >::_Tree<State *,State *,std::set<State *,std::less<State *>,std::allocator<State *> >::_Kfn,std::less<State *>,std::allocator<State *> >' : identifier was truncated to '255' characters in the debug information
+c:\program files\microsoft visual studio\vc98\include\xtree(236) : warning C4786: '__ehhandler$?insert@?$_Tree@PAVState@@PAV1@U_Kfn@?$set@PAVState@@U?$less@PAVState@@@std@@V?$allocator@PAVState@@@3@@std@@U?$less@PAVState@@@4@V?$allocator@PAVState@@@4@@std@@QAE?AU?$pair@Viterator@?$_Tree@PAVState@@PAV1@U_Kfn@?$set@PAVState@@U?$less@PAVState@@@std@@V?$allocator@PAVState@@@3@@std@@U?$less@PAVState@@@4@V?$allocator@PAVState@@@4@@std@@_N@2@ABQAVState@@@Z' : identifier was truncated to '255' characters in the debug information
+c:\program files\microsoft visual studio\vc98\include\xtree(236) : warning C4786: '__unwindfunclet$?insert@?$_Tree@PAVState@@PAV1@U_Kfn@?$set@PAVState@@U?$less@PAVState@@@std@@V?$allocator@PAVState@@@3@@std@@U?$less@PAVState@@@4@V?$allocator@PAVState@@@4@@std@@QAE?AU?$pair@Viterator@?$_Tree@PAVState@@PAV1@U_Kfn@?$set@PAVState@@U?$less@PAVState@@@std@@V?$allocator@PAVState@@@3@@std@@U?$less@PAVState@@@4@V?$allocator@PAVState@@@4@@std@@_N@2@ABQAVState@@@Z$0' : identifier was truncated to '255' characters in the debug information
+c:\program files\microsoft visual studio\vc98\include\xtree(162) : warning C4786: 'std::_Tree<Formula *,Formula *,std::set<Formula *,CmpFormulas,std::allocator<Formula *> >::_Kfn,CmpFormulas,std::allocator<Formula *> >::_Tree<Formula *,Formula *,std::set<Formula *,CmpFormulas,std::allocator<Formula *> >::_Kfn,CmpFormulas,std::allocator<Formula *> >' : identifier was truncated to '255' characters in the debug information
+c:\program files\microsoft visual studio\vc98\include\xtree(236) : warning C4786: '__ehhandler$?insert@?$_Tree@PAVFormula@@PAV1@U_Kfn@?$set@PAVFormula@@VCmpFormulas@@V?$allocator@PAVFormula@@@std@@@std@@VCmpFormulas@@V?$allocator@PAVFormula@@@4@@std@@QAE?AU?$pair@Viterator@?$_Tree@PAVFormula@@PAV1@U_Kfn@?$set@PAVFormula@@VCmpFormulas@@V?$allocator@PAVFormula@@@std@@@std@@VCmpFormulas@@V?$allocator@PAVFormula@@@4@@std@@_N@2@ABQAVFormula@@@Z' : identifier was truncated to '255' characters in the debug information
+c:\program files\microsoft visual studio\vc98\include\xtree(236) : warning C4786: '__unwindfunclet$?insert@?$_Tree@PAVFormula@@PAV1@U_Kfn@?$set@PAVFormula@@VCmpFormulas@@V?$allocator@PAVFormula@@@std@@@std@@VCmpFormulas@@V?$allocator@PAVFormula@@@4@@std@@QAE?AU?$pair@Viterator@?$_Tree@PAVFormula@@PAV1@U_Kfn@?$set@PAVFormula@@VCmpFormulas@@V?$allocator@PAVFormula@@@std@@@std@@VCmpFormulas@@V?$allocator@PAVFormula@@@4@@std@@_N@2@ABQAVFormula@@@Z$0' : identifier was truncated to '255' characters in the debug information
+c:\program files\microsoft visual studio\vc98\include\xtree(236) : warning C4786: '__ehhandler$?insert@?$_Tree@PAVState@@PAV1@U_Kfn@?$set@PAVState@@VCmpName@@V?$allocator@PAVState@@@std@@@std@@VCmpName@@V?$allocator@PAVState@@@4@@std@@QAE?AU?$pair@Viterator@?$_Tree@PAVState@@PAV1@U_Kfn@?$set@PAVState@@VCmpName@@V?$allocator@PAVState@@@std@@@std@@VCmpName@@V?$allocator@PAVState@@@4@@std@@_N@2@ABQAVState@@@Z' : identifier was truncated to '255' characters in the debug information
+c:\program files\microsoft visual studio\vc98\include\xtree(236) : warning C4786: '__unwindfunclet$?insert@?$_Tree@PAVState@@PAV1@U_Kfn@?$set@PAVState@@VCmpName@@V?$allocator@PAVState@@@std@@@std@@VCmpName@@V?$allocator@PAVState@@@4@@std@@QAE?AU?$pair@Viterator@?$_Tree@PAVState@@PAV1@U_Kfn@?$set@PAVState@@VCmpName@@V?$allocator@PAVState@@@std@@@std@@VCmpName@@V?$allocator@PAVState@@@4@@std@@_N@2@ABQAVState@@@Z$0' : identifier was truncated to '255' characters in the debug information
+c:\program files\microsoft visual studio\vc98\include\utility(21) : warning C4786: 'std::pair<std::_Tree<State *,State *,std::set<State *,std::less<State *>,std::allocator<State *> >::_Kfn,std::less<State *>,std::allocator<State *> >::iterator,bool>::pair<std::_Tree<State *,State *,std::set<State *,std::less<State *>,std::allocator<State *> >::_Kfn,std::less<State *>,std::allocator<State *> >::iterator,bool>' : identifier was truncated to '255' characters in the debug information
+c:\program files\microsoft visual studio\vc98\include\utility(21) : warning C4786: 'std::pair<std::_Tree<Formula *,Formula *,std::set<Formula *,CmpFormulas,std::allocator<Formula *> >::_Kfn,CmpFormulas,std::allocator<Formula *> >::iterator,bool>::pair<std::_Tree<Formula *,Formula *,std::set<Formula *,CmpFormulas,std::allocator<Formula *> >::_Kfn,CmpFormulas,std::allocator<Formula *> >::iterator,bool>' : identifier was truncated to '255' characters in the debug information
+c:\program files\microsoft visual studio\vc98\include\utility(21) : warning C4786: 'std::pair<std::_Tree<State *,State *,std::set<State *,CmpName,std::allocator<State *> >::_Kfn,CmpName,std::allocator<State *> >::iterator,bool>::pair<std::_Tree<State *,State *,std::set<State *,CmpName,std::allocator<State *> >::_Kfn,CmpName,std::allocator<State *> >::iterator,bool>' : identifier was truncated to '255' characters in the debug information
+Linking...
+
+
+
+<h3>Results</h3>
+model_check.exe - 0 error(s), 19 warning(s)
+</pre>
+</body>
+</html>

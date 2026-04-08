@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "mkdir-build",
+            "type": "shell",
+            "command": "mkdir -p ${workspaceFolder}/build",
+            "presentation": { "reveal": "silent" }
+        },
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "clang++",
+            "args": [
+                "-std=c++17",
+                "-g",
+                "-o", "${workspaceFolder}/build/model_check",
+                "${workspaceFolder}/model_check/model_check.cpp",
+                "${workspaceFolder}/model_check/StdAfx.cpp"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compile model_check with clang++",
+            "dependsOn": "mkdir-build"
+        }
+    ]
+}
