@@ -139,7 +139,7 @@ export default function ModelChecking() {
           {output && (
             <div className="mt-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Output:</h3>
-              <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto font-mono text-sm">
+              <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto overflow-y-auto font-mono text-sm max-h-64">
                 {output}
               </pre>
             </div>

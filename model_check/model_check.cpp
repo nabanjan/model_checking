@@ -529,8 +529,10 @@ Sts* parseSts( int argc, const char *stsFileName )
 	cout << "Constructing STS....\n" << endl;
 #if 1
 	stsP = constructSts( stsFileName );
-	cout << "Construction of STS from file '" << stsFileName << "' is complete!\n" << endl;
-	system(("cat " + string(stsFileName)).c_str()); 
+	cout << "Construction of STS from file '" << stsFileName 
+		<< "' is complete!" << endl << "State Machine:\n" << endl;
+	system(("cat " + string(stsFileName)).c_str());
+	cout << endl << endl;
 	return ( stsP );
 
 #else
@@ -542,19 +544,20 @@ Sts* parseSts( int argc, const char *stsFileName )
 Formula* parseFormula( int argc, const char *argv )
 {
 	Formula *fP;
+	const char *formula = argv;
 	if ( (argc < 2) || !argv ) {
 		cout << "No Formula to parse!" << endl;
-		argv = "!EU!c2Uc0.c1";
-		cout << "Using formula: '" << argv << "' for demonstration purpose.\n" << endl;
+		formula = "!EU!c2Uc0.c1";
+		cout << "Using formula: '" << formula << "' for demonstration purpose.\n" << endl;
 #if 0
-		argv = "AF!c0.AFc1";
+		formula = "AF!c0.AFc1";
 #endif
-		cout << "Using formula: '" << argv << "' for demonstration purpose.\n" << endl;
+		cout << "Using formula: '" << formula << "' for demonstration purpose.\n" << endl;
 	}
 
-	cout << "Constructing the formula....\n" << endl;
-	fP = constructFormula( mystrdup(argv) );
-	cout << "Construction of formula for '" << argv << "' is complete!\n" << endl;
+	cout << "Constructing the formula.... " + string(formula) + " ....\n" << endl;
+	fP = constructFormula( mystrdup(formula) );
+	cout << "Construction of formula for '" << formula << "' is complete!\n" << endl;
 	return( fP ); 
 }
 
