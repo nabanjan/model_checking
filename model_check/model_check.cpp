@@ -4,8 +4,9 @@
 #include <vector>
 #include <string>
 #include <iostream>
-#include "assert.h"
-#include "string.h"
+#include <cassert>
+#include <cstring>
+#include <memory>
 
 using namespace std;
 
@@ -88,7 +89,7 @@ public:
 
 };
 
-char* mystrdup( char *str )
+char* mystrdup( const char *str )
 {
 	int len = strlen( str );
 	char *mystr = (char *)malloc( (len+1)*sizeof( char ) ); 
@@ -461,7 +462,7 @@ void createAState( char *stateInfo, Sts *stsP )
 
 }
 
-Sts* constructSts( char *stsFileName )
+Sts* constructSts( const char *stsFileName )
 {
 	Sts *stsP = new Sts();
 	long lSize;
@@ -515,7 +516,7 @@ Sts* constructSts( char *stsFileName )
 	return stsP;
 }
 
-Sts* parseSts( int argc, char *stsFileName )
+Sts* parseSts( int argc, const char *stsFileName )
 {
 	Sts *stsP;
 	if ( (argc < 3) ) {
@@ -536,7 +537,7 @@ Sts* parseSts( int argc, char *stsFileName )
 
 }
 
-Formula* parseFormula( int argc, char *argv )
+Formula* parseFormula( int argc, const char *argv )
 {
 	Formula *fP;
 	if ( (argc < 2) || !argv ) {
