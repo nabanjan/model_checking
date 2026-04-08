@@ -530,6 +530,7 @@ Sts* parseSts( int argc, const char *stsFileName )
 #if 1
 	stsP = constructSts( stsFileName );
 	cout << "Construction of STS from file '" << stsFileName << "' is complete!\n" << endl;
+	system(("cat " + string(stsFileName)).c_str()); 
 	return ( stsP );
 
 #else
